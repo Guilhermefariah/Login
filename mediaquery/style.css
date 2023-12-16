@@ -31,12 +31,16 @@ Large screen: above 900px
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
-    .lonin {
+    .login {
         width: 950px;
     }
     .img {
         float: left;
         width: 50%;
         height: 100%;
+    }
+    .form {
+        float: right;
+        width: 50%;
     }
 }
