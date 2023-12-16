@@ -4,19 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquery/style.css">
 </head>
 <body>
     <main>
         <section class="login">
+            <i id="apple" class="material-icons">apple</i>
             <div class="img">
+                
                 <!--image css-->
             </div>
             <div class="form">
                 <h1>Login</h1>
-                <p>Be Wellcome!</p>        
-                <form action="login.js" method="post"></form> 
+                <div class="text">Be Wellcome!</div>       
+                <form action="login.js" method="post">
+
+                    <div class="field">
+                        <label for="ilogin"><i class="material-icons">person</i></label>
+                        <input type="email" name="login" id="ilogin" 
+                        autocomplete="email" required maxlength="30" placeholder="e-mail">
+                    </div>
+
+                   <div class="field">
+                        <label for="ipassword"><i  class="material-icons">vpn_key</i></label>
+                        <input type="password" name="password" id="ipassword" 
+                        autocomplete="current-password" required minlength="8"
+                        maxlength="10" placeholder="password">        
+                    </div><br>
+                    <input type="submit" value="Entrar"><br>
+                    <a href="forgotpassword.html">
+                        Forgot your password <i class="material-icons">mail</i>
+                    </a>
+                </form> 
             </div>
         </section>
     </main>
