@@ -10,11 +10,14 @@ Large screen: above 900px
 */
 
 @media screen and (min-width: 520px) and (max-width:700px){
-    body {
+    body { /* Tablet */
         background-image: linear-gradient(to top, #49a09d, #5f2c82 );
+        margin: 0px;
+        overflow: hidden;
     }
     .login {
         width: 80vw;
+        height: 290px;
        
     }
     .img {
@@ -26,16 +29,24 @@ Large screen: above 900px
         float: right;
         width: 70%;
     }
-
+     
+   
+    #apple {
+        transform: translate(150px, 10%);
+        color: #000000;
+    }
     
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) { /*  Desktop */
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        margin: 0px;
+        overflow: hidden;
     }
 
     .login {
         width: 950px;
+        height: 350px;
     }
     .img {
         float: right;
@@ -50,7 +61,12 @@ Large screen: above 900px
         font-size: 2em;
     }
     .text {
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 10px 0px;
+    }
+    #apple {
+        transform: translate(230px, 10%);
+        color: #000000;
     }
    
 }
